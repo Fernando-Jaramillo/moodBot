@@ -1,0 +1,60 @@
+.face{
+    position: relative;
+    height: 200px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.face img{
+    position: absolute;
+    right: 0;
+}
+
+.face img.next{
+    right: 43px;
+}
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .face{
+        width: 250px;
+    }
+
+    .face img{
+        width: 250px;
+    }
+
+    .face img.next{
+        width: 210px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .face{
+        width: 250px;
+    }
+
+    .face img{
+        width: 250px;
+    }
+
+    .face img.next{
+        width: 210px;
+        left: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    .face{
+        width: 350px;
+    }
+
+    .face img{
+        width: 350px;
+    }
+
+    .face img.next{
+        right: 43px;
+        width: 300px;
+    }
+}
+

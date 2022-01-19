@@ -1,0 +1,36 @@
+.footerContainer{
+    background: #303031;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0 ;
+}
+
+.footerContainer a{
+    margin-left: 20px;
+}
+.iconLinks img{
+    width: 27.5px;
+}
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .footerContainer{
+        font-size: .8em;
+        align-content: center;
+        gap: 12px;
+    }
+    .iconLinks img{
+        width: 25px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .footerContainer{
+        font-size: .8em;
+    }
+}

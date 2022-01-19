@@ -1,0 +1,178 @@
+.responseContainer{
+    color: white;
+    font-size: 1.3em;
+    display: grid;
+    align-items: space-between;
+    width: 1000px;
+    grid-template-columns: 450px 500px;
+}
+
+.buttonContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.logoContainer{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.goBackContainer{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.screenContainer{
+    grid-area: 1 / 2 / 3 / 3 
+}
+
+.moodLogo{
+    width: 450px;
+}
+
+.bodyFont{
+    margin-top: 66px;
+}
+
+.screenContainer{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.screen{
+    width: 450px;
+}
+
+.quote{
+    color:white;
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    width: 300px;
+    font-size: 1.8em;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .responseContainer{
+        font-size: 1em;
+        width: 250px;
+        grid-template-columns: 250px;
+        align-items: center;
+    }
+
+    .logoContainer{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .goBackContainer{
+        grid-area: 3 / 1 / 4 / 2;
+        margin: auto;
+    }
+
+    .screenContainer{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .moodLogo{
+        width: 250px;
+    }
+
+    .bodyFont{
+        margin-top: 36px;
+    }
+
+    .screenContainer{
+        position: relative;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .screen{
+        width: 250px;
+    }
+
+    .quote{
+        color:white;
+        position: absolute;
+        width: 150px;
+        font-size: 1.2em;
+        top: 80px;
+        left: 53px;
+    }
+}
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .responseContainer{
+        font-size: 1em;
+        width: 250px;
+        grid-template-columns: 250px;
+        align-items: center;
+    }
+
+    .logoContainer{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .goBackContainer{
+        grid-area: 3 / 1 / 4 / 2;
+        margin: auto;
+    }
+
+    .screenContainer{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .moodLogo{
+        width: 250px;
+    }
+
+    .bodyFont{
+        margin-top: 36px;
+    }
+
+    .screenContainer{
+        position: relative;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .screen{
+        width: 250px;
+    }
+
+    .quote{
+        color:white;
+        position: absolute;
+        width: 150px;
+        font-size: 1.2em;
+        top: 80px;
+        left: 53px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    .responseContainer{
+        width: 700px;
+        grid-template-columns: 300px 350px;
+        justify-content: space-between;
+    }
+
+    .moodLogo{
+        width: 300px;
+    }
+
+    .screenContainer{
+        margin-left: 0px;
+    }
+
+    .screen{
+        width: 350px;
+    }
+
+    .quote{
+        top: 120px;
+        left: 60px;
+        width: 250px;
+        font-size: 1.3em;
+    }
+
+}

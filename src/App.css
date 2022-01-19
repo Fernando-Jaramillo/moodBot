@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+/* initializing every element from zero to customise them */
+*{
+  margin: 0;
+  padding: 0;
+/*adding this property that helps to control better the sizes, the space and to avoid too many overlaps */
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+  font-family: "destructobeam";
+  src: url("./assets/destructobeam.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: "destructobeam";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer{
+  height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainContainer .bodyContainer{
+  width: 1000px;
+  padding-top: 110px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .mainContainer .bodyContainer{
+      padding-top: 50px;
+      width: 300px;
+      justify-content: center;
+    } 
+}
+
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    body .mainContainer .bodyContainer{
+      padding-top: 45px;
+      width: 250px;
+      justify-content: center;
+    } 
+}
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+  .mainContainer .bodyContainer{
+    width: 700px;
+    padding-top: 110px;
   }
 }
+/*fin movil*/
